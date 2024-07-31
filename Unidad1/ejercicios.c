@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 unsigned long ejercicio1Factorial(int n)
 {
@@ -55,18 +56,17 @@ double ejercicio3Exponencial(int x, double tol)
 
 double ejercicio4RaizCuadrada(int a,double tol)
 {
-    double tAnt=1, tAct, resultado=0, dif=1.0;
-
-    if(a==1)
-        return tAnt;
-
-    while(dif<tol)
-    {
-        tAct = 0.5*(tAnt+(a/tAnt));
-        resultado+=tAct;
-        dif=tAct-tAnt;
-        tAnt= tAct;
+    double r1=1,terminoActual,dif=1;
+    if(a==1){
+        return r1;
     }
-    return resultado;
+
+    while(fabs(dif)>tol){
+        terminoActual=(0.5)*(r1+(a/r1));
+        dif=terminoActual-r1;
+        r1=terminoActual;
+    }
+
+return terminoActual;
 
 }

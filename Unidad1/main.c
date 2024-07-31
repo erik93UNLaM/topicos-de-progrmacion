@@ -14,7 +14,7 @@ int main()
     printf("3-Exponencial de %d con %f es %llu\n",x,tol, ejercicio3Exponencial(x,tol));
 */
     int r=4;
-    double cota=0.05;
+    double cota=0.000005;
     printf("4-Raiz cuadrada de %d con cota %f es %f",r,cota,ejercicio4RaizCuadrada(r,cota));
 
     return 0;
