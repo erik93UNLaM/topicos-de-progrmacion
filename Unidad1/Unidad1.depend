@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1722386498 source:/home/erik-alvarez/Documents/Codeblocks/Unidad1/ejercicios.c
+	<stdio.h>
+	<stdlib.h>
+
+1722379560 source:/home/erik-alvarez/Documents/Codeblocks/Unidad1/main.c
+	<stdio.h>
+	<stdlib.h>
+	"ejercicios.h"
+
+1722379546 /home/erik-alvarez/Documents/Codeblocks/Unidad1/ejercicios.h
+
