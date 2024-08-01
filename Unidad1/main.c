@@ -15,7 +15,15 @@ int main()
 */
     int r=4;
     double cota=0.000005;
-    printf("4-Raiz cuadrada de %d con cota %f es %f",r,cota,ejercicio4RaizCuadrada(r,cota));
-
+    printf("4-Raiz cuadrada de %d con cota %f es %f\n",r,cota,ejercicio4RaizCuadrada(r,cota));
+    int fibo=4;
+    printf("5-El numero %d. Pertenece a fibonacci? %s\n",fibo,ES_CIERTO(ejercicio5PerteneceFibonacci(fibo)));
+    int seno=5;
+    double tolSeno=0.05;
+   // printf("6-El seno de %d en radianes es %f",seno,ejercicio6Seno(seno,tolSeno));
+    int numb=12;
+    printf("7-El numero %d es %s\n",numb,ejercicio7(numb));
+    int m1=0,m2=4;
+    printf("8-La multiplicacion de %d y %d es %d\n",m1,m2,ejercicio8Multiplicacion(m1,m2));
     return 0;
 }
